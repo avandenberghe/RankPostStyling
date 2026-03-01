@@ -1,9 +1,11 @@
 services:
-    paybas.rankpoststyling.listener:
-        class: paybas\rankpoststyling\event\listener
+    avathar.rankpoststyling.listener:
+        class: avathar\rankpoststyling\event\listener
         arguments:
             - '@cache'
+            - '@config'
             - '@request'
+            - '@template'
             - '@user'
         tags:
             - { name: event.listener }

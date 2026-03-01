@@ -2,7 +2,6 @@
 /**
  *
  * Rank Post Styling. An extension for the phpBB Forum Software package.
- * French translation by Galixte
  *
  * @copyright (c) 2015 PayBas
  * @copyright (c) 2020 Sajaki
@@ -36,7 +35,7 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'RANK_STYLE'					=> 'Style de rang (classe CSS)',
+	'RANK_STYLE'					=> 'Rank Style (CSS class)',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',
 ));

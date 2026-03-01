@@ -2,3 +2,8 @@
 	<dt><label for="rank_style">{{ lang('RANK_STYLE') }}{{ lang('COLON') }}</label></dt>
 	<dd><input name="rank_style" type="text" id="rank_style" value="{{ RANK_STYLE }}" maxlength="255" /></dd>
 </dl>
+<dl>
+	<dt><label for="rps_small_ranks">{{ lang('RPS_SMALLRANKS_ENABLE') }}{{ lang('COLON') }}</label><br /><span>{{ lang('RPS_SMALLRANKS_ENABLE_EXPLAIN') }}</span></dt>
+	<dd><label><input type="radio" name="rps_small_ranks" value="1"{% if RPS_SMALL_RANKS %} checked="checked"{% endif %} class="radio" /> {{ lang('YES') }}</label>
+		<label><input type="radio" name="rps_small_ranks" value="0"{% if not RPS_SMALL_RANKS %} checked="checked"{% endif %} class="radio" /> {{ lang('NO') }}</label></dd>
+</dl>

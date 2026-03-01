@@ -1,10 +1,10 @@
 {
-    "name": "paybas/rankpoststyling",
+    "name": "avathar/rankpoststyling",
     "type": "phpbb-extension",
     "description": "This extension adds a CSS rule option to user ranks, which can be used style posts of users with those ranks.",
-    "homepage": "https://github.com/Sajaki/RankPostStyling",
-    "version": "1.0.7",
-    "time": "2019-06-29",
+    "homepage": "https://github.com/avandenberghe/RankPostStyling",
+    "version": "2.0.0",
+    "time": "2026-03-01",
     "license": "GPL-2.0",
     "authors": [
         {
@@ -19,8 +19,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4",
-        "phpbb/phpbb": ">=3.2.0",
+        "php": ">=7.1.3",
         "composer/installers": "~1.0"
     },
     "require-dev": {
@@ -29,10 +28,11 @@
     "extra": {
         "display-name": "Rank Post Styling",
         "soft-require": {
-            "phpbb/phpbb": ">=3.2.0"
+            "phpbb/phpbb": ">=3.3.0,<4.0.0@dev"
         },
         "version-check": {
-            "host": "www.avathar.be",
+            "protocol": "https://",
+            "host": "avathar.be",
             "directory": "/versioncheck",
             "filename": "rankpoststyling.json"
         }

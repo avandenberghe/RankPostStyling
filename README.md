@@ -1,86 +1,74 @@
-Rank Post Styling for phpBB 3.2/3.3
-=======================================
+# Rank Post Styling for phpBB 3.3
 
-#### Description
-Extension for phpBB 3.1/3.2 that adds a CSS rule option to user ranks. 
-Useful for styling posts of special users.
+A phpBB extension that lets you assign a CSS class to each special rank. The class wraps the user's posts, search results, and profile view, allowing you to style them however you like — custom colors, backgrounds, images, etc.
 
-Rank Listing 
-![Screenshot](screenshot.png)
+The extension includes predefined rank styles for PBWoW3 and PBWoW3 Heroes (`blizz`, `mvp`, `propass`), and an option to display rank images as small overlays on user avatars.
 
-Manage ranks
-![Screenshot](ranks.png)
+## Features
 
-#### Version
-v1.0.7 (29-06-2020)
-[![Build Status](https://api.travis-ci.org/Sajaki/rankpoststyling.svg)](https://travis-ci.org/Sajaki/rankpoststyling)
+- Assign a CSS class to any special rank via ACP > Manage Ranks
+- Class is applied to posts (viewtopic), search results, and member profiles
+- Small rank images toggle for PBWoW3 styles (overlays rank icon on avatar)
+- Includes predefined styles for PBWoW3 and PBWoW3 Heroes
+- Works with any style — define your own CSS classes for prosilver or custom styles
 
-### Changelog 
-- 1.0.7 (29/06/2020)
-  - [NEW] phpBB 3.3 support. 
-  - [NEW] dropped support for 3.1
-  
-- 1.0.6 (13/12/2017)
-  - [NEW] pbWoW heroes support
+## Supported styles
 
-- 1.0.5 (18/09/2017)
-  - [NEW] phpBB 3.2
+| Style | Included styling |
+|---|---|
+| **All** (base) | Minimal example class `rankpoststyle1` |
+| **PBWoW3** | Blizzard/MVP content colors, Propass avatar overlay, Blizzard avatar backgrounds |
+| **PBWoW3 Heroes** | Post background images, avatar container sprites, content colors, profile view backgrounds |
 
-- 1.0.4 (20/03/2016)
-  - [NEW] autoload css in overall_header_head_append_
-  - [NEW] Italian translation (Mauron)     
-  - [CHG] add tutorial
+## Requirements
 
-### Features
-- Integration with phpBB ranks ACP module
-- Allows admin to specify a CSS class rule for each "special" rank
-- CSS class rule is applied to `<div class="post-container">` which wraps posts
-- Available in:
-  - Viewtopic
-  - Search results (posts mode)
-  - Memberlist (viewprofile)
-- Gives total control to style whatever you like (fonts, colors, images, etc.)  
+- phpBB 3.3.0 or higher
+- PHP 7.1.3 or higher
 
-#### Requirements
-- phpBB 3.2.0 or higher
+## Languages
 
-#### Languages supported
-- English, Spanish, Arabic, Croatian, Polish, French, Turkish, Italian
+Arabic, Croatian, Czech, Dutch, English, French, German, German (Sie), Italian, Polish, Portuguese, Russian, Slovak, Spanish, Spanish (tuteo), Swedish, Turkish, Ukrainian
 
 ## Installation
-1. [Download the latest release](http://www.avathar.be/forum/app.php/dl_ext/?cat=2) and unzip it.
-2. Copy the entire contents from the unzipped folder to `/ext/paybas/rankpoststyling/`.
-3. Navigate in the ACP to `Customise -> Manage extensions`.
+
+1. [Download the latest release](https://github.com/avandenberghe/RankPostStyling/releases) and unzip it.
+2. Copy the contents to `/ext/avathar/rankpoststyling/`.
+3. In ACP, go to `Customise -> Manage extensions`.
 4. Find `Rank Post Styling` under "Disabled Extensions" and click `Enable`.
 
-#### Tutorial
-1. go to ACP -> Users and Groups -> Manage Ranks. There is now a new column 'Rank Style'. 
-2. here you can define the css style that will be applied to the post content from members with this rank. add "rankpoststyle1" to one of the ranks.
-3. the example css 'rankpoststyling.css' will now be applied to post content of all ranked posts. 
-4. pbWoW & pbTech have other predefined rank styles, that you can apply in ACP. 
+## Usage
 
-#### Warning!
-You need to be abit familiar with HTML and CSS. 
+### Assigning rank styles
 
-In manage ranks, assign a css class that you define to your ranks. 
-Then, all post-container classes for will be appended with the assigned css class for the rank of the user that posted. 
-As an example, the pbWoW style contains 2 content styling classes : "blizz" and "mvp". 
-You would then need to assign these classes to your ranks. 
- ```
- .blizz .content { color: #00C0FF; }
- .blizz .content strong { color: #FFF; }
- .mvp .content { color: #5DF644; }
- .mvp .content strong { color: #FFF; }
+1. Go to ACP > Users and Groups > Manage Ranks.
+2. Edit a special rank and enter a CSS class name in the "Rank Style" field (e.g. `blizz`).
+3. Posts by users with that rank will be wrapped in a container with your class applied.
+
+![Rank listing](contrib/screenshot.png)
+
+![Editing a rank](contrib/ranks.png)
+
+PBWoW3 styles ship with predefined classes — just assign `blizz`, `mvp`, or `propass` to your ranks. For other styles, define your own rules:
+
+```css
+.myrank .content { color: #00C0FF; }
+.myrank .content strong { color: #FFF; }
 ```
-No support will be given beyond the actual functionality of the extension. All styling is up to you.
 
-#### Uninstallation
-1. Navigate in the ACP to `Customise -> Manage extensions`.
-2. Click the `Disable` link for `Rank Post Styling`.
-3. To permanently uninstall, click `Delete Data`, then delete the `rankpoststyling` folder from `/ext/paybas/`.
+### Small rank images (PBWoW3)
 
-### License
-[GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
+1. On the rank edit page, set "Small rank images" to Yes.
+2. Rank images will display as small overlays on the user avatar instead of in the standard position below it.
 
-© 2015 - PayBas
-© 2017 - Sajaki
+## Uninstallation
+
+1. In ACP, go to `Customise -> Manage extensions`.
+2. Click `Disable` for `Rank Post Styling`.
+3. To permanently uninstall, click `Delete Data`, then delete the `/ext/avathar/rankpoststyling/` folder.
+
+## License
+
+[GNU General Public License v2](https://opensource.org/licenses/GPL-2.0)
+
+(c) 2015 - PayBas
+(c) 2020 - Sajaki

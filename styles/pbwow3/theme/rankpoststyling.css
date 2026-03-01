@@ -1,0 +1,45 @@
+.rankpoststyle1 .content {
+    color: #00c0ff;
+}
+
+
+/* Special post styles
+--------------------------------------------- */
+.blizz .bg1 .postprofile { background-image: url("./images/avatar-bg1-blizz.gif"); }
+.blizz .bg2 .postprofile { background-image: url("./images/avatar-bg2-blizz.gif"); }
+
+.propass .postprofile .avatar {
+   overflow: visible;
+}
+
+.propass .postprofile .avatar:after {
+	background-image: url("./images/propass.gif");
+	content: "";
+	display: block;
+	height: 84px;
+	width: 120px;
+	position: absolute;
+	bottom: -9px;
+	left: 50%;
+	-webkit-transform: translateX(-49px);
+	-ms-transform: translateX(-49px);
+	transform: translateX(-49px);
+}
+.propass .postprofile .has-avatar .rank-icon {
+	background: none;
+}
+
+
+/* General post content styling
+--------------------------------------------- */
+
+.blizz .content { color: #00C0FF; }
+.blizz .content strong { color: #FFF; }
+
+.mvp .content { color: #5DF644; }
+.mvp .content strong { color: #FFF; }
+
+.blizz .post:target .content { color: #00C0FF; }
+.blizz .post:target .content strong { color: #FFF; }
+.mvp .post:target .content { color: #5DF644; }
+.mvp .post:target .content strong { color: #FFF; }
