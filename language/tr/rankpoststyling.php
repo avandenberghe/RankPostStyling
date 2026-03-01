@@ -37,6 +37,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Rütbe stili (CSS sınıfı)',
-	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
-	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',
+	'RANK_STYLE_EXPLAIN'			=> 'Bu rütbeye sahip kullanıcıların gönderilerine uygulanacak bir CSS sınıf adı girin (örn. blizz, mvp, propass).',
+	'RPS_LEGEND'						=> 'Rütbeye göre gönderi stili',
+	'RPS_SMALLRANKS_ENABLE'			=> 'Küçük rütbe görselleri',
+	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Rütbe görsellerini standart rütbe konumu yerine kullanıcı avatarı üzerinde küçük kaplama simgeleri olarak görüntüler. PBWoW3 stilleri tarafından kullanılır.',
 ));

@@ -37,6 +37,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Style de rang (classe CSS)',
-	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
-	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',
+	'RANK_STYLE_EXPLAIN'			=> 'Entrez un nom de classe CSS à appliquer aux messages des utilisateurs ayant ce rang (ex. blizz, mvp, propass).',
+	'RPS_LEGEND'						=> 'Style des messages par rang',
+	'RPS_SMALLRANKS_ENABLE'			=> 'Petites images de rang',
+	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Affiche les images de rang sous forme de petites icônes superposées sur l\'avatar de l\'utilisateur au lieu de la position standard du rang. Utilisé par les styles PBWoW3.',
 ));

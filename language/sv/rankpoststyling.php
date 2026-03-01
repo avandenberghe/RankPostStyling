@@ -35,7 +35,9 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'RANK_STYLE'					=> 'Rank Style (CSS class)',
-	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
-	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',
+	'RANK_STYLE'					=> 'Rangstil (CSS-klass)',
+	'RANK_STYLE_EXPLAIN'			=> 'Ange ett CSS-klassnamn som ska tillämpas på inlägg av användare med denna rang (t.ex. blizz, mvp, propass).',
+	'RPS_LEGEND'						=> 'Inläggsstil per rang',
+	'RPS_SMALLRANKS_ENABLE'			=> 'Små rangbilder',
+	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Visa rangbilder som små överlagrade ikoner på användarens avatar istället för i standardpositionen för rang. Används av PBWoW3-stilar.',
 ));

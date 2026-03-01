@@ -37,6 +37,8 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Stil statusa (CSS klasa)',
-	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
-	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',
+	'RANK_STYLE_EXPLAIN'			=> 'Unesite naziv CSS klase koja će se primijeniti na postove korisnika s ovim statusom (npr. blizz, mvp, propass).',
+	'RPS_LEGEND'						=> 'Stiliziranje postova prema statusu',
+	'RPS_SMALLRANKS_ENABLE'			=> 'Male slike statusa',
+	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Prikazuje slike statusa kao male ikone preko avatara korisnika umjesto na standardnoj poziciji statusa. Koristi se za PBWoW3 stilove.',
 ));

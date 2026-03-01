@@ -60,6 +60,8 @@ class listener implements EventSubscriberInterface
 			'core.search_modify_tpl_ary'           => 'search_modify_tpl_ary',
 
 			'core.page_header'                     => 'page_header',
+
+			'core.acp_board_config_edit_add'       => 'acp_board_config_edit_add',
 		);
 	}
 
@@ -77,8 +79,6 @@ class listener implements EventSubscriberInterface
 		$sql_ary = $event['sql_ary'];
 		$sql_ary['rank_style'] = $this->request->variable('rank_style', '');
 		$event['sql_ary'] = $sql_ary;
-
-		$this->config->set('rps_small_ranks', $this->request->variable('rps_small_ranks', 0));
 	}
 
 	public function acp_ranks_edit_modify_tpl_ary($event)
@@ -87,8 +87,40 @@ class listener implements EventSubscriberInterface
 
 		$tpl_ary = $event['tpl_ary'];
 		$tpl_ary['RANK_STYLE'] = (isset($event['ranks']['rank_style'])) ? $event['ranks']['rank_style'] : '';
-		$tpl_ary['RPS_SMALL_RANKS'] = $this->config['rps_small_ranks'];
 		$event['tpl_ary'] = $tpl_ary;
+	}
+
+	/* Board Features ACP */
+	public function acp_board_config_edit_add($event)
+	{
+		if ($event['mode'] === 'features')
+		{
+			$this->user->add_lang_ext('avathar/rankpoststyling', 'rankpoststyling');
+
+			$display_vars = $event['display_vars'];
+
+			$rps_vars = array(
+				'legend_rps'		=> 'RPS_LEGEND',
+				'rps_small_ranks'	=> array('lang' => 'RPS_SMALLRANKS_ENABLE', 'validate' => 'bool', 'type' => 'radio:yes_no', 'explain' => true),
+			);
+
+			// Insert before the submit legend
+			$submit_key = 'legend' . count(array_filter(array_keys($display_vars['vars']), function($k) { return strpos($k, 'legend') === 0; }));
+			$new_vars = array();
+			foreach ($display_vars['vars'] as $key => $value)
+			{
+				if ($key === $submit_key)
+				{
+					foreach ($rps_vars as $rps_key => $rps_value)
+					{
+						$new_vars[$rps_key] = $rps_value;
+					}
+				}
+				$new_vars[$key] = $value;
+			}
+			$display_vars['vars'] = $new_vars;
+			$event['display_vars'] = $display_vars;
+		}
 	}
 
 	public function acp_ranks_list_modify_rank_row($event)
