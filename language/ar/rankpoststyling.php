@@ -37,7 +37,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'تصميم الرُتب ( لغة الـCSS )',
-	'RANK_STYLE_EXPLAIN'			=> 'أدخل اسم فئة CSS لتطبيقها على مشاركات المستخدمين ذوي هذه الرتبة (مثال: blizz، mvp، propass).',
+	'RANK_STYLE_EXPLAIN'			=> 'أدخل اسم فئة CSS لتطبيقها على مشاركات المستخدمين ذوي هذه الرتبة (مثال: rankpoststyle1). أنماط PBWoW3 تدعم أيضاً: blizz، mvp، propass.',
 	'RPS_LEGEND'						=> 'تنسيق مشاركات الرتب',
 	'RPS_SMALLRANKS_ENABLE'			=> 'صور الرتب الصغيرة',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'عرض صور الرتب كأيقونات صغيرة متراكبة على صورة المستخدم بدلاً من الموضع القياسي للرتبة. يُستخدم مع أنماط PBWoW3.',

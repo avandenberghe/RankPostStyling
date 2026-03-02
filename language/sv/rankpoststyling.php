@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Rangstil (CSS-klass)',
-	'RANK_STYLE_EXPLAIN'			=> 'Ange ett CSS-klassnamn som ska tillämpas på inlägg av användare med denna rang (t.ex. blizz, mvp, propass).',
+	'RANK_STYLE_EXPLAIN'			=> 'Ange ett CSS-klassnamn som ska tillämpas på inlägg av användare med denna rang (t.ex. rankpoststyle1). PBWoW3-stilar stöder även: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Inläggsstil per rang',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Små rangbilder',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Visa rangbilder som små överlagrade ikoner på användarens avatar istället för i standardpositionen för rang. Används av PBWoW3-stilar.',

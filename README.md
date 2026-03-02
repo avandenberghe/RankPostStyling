@@ -2,23 +2,21 @@
 
 A phpBB extension that lets you assign a CSS class to each special rank. The class wraps the user's posts, search results, and profile view, allowing you to style them however you like — custom colors, backgrounds, images, etc.
 
-The extension includes predefined rank styles for PBWoW3 and PBWoW3 Heroes (`blizz`, `mvp`, `propass`), and an option to display rank images as small overlays on user avatars.
-
 ## Features
 
 - Assign a CSS class to any special rank via ACP > Manage Ranks
 - Class is applied to posts (viewtopic), search results, and member profiles
-- Small rank images toggle for PBWoW3 styles (overlays rank icon on avatar)
-- Includes predefined styles for PBWoW3 and PBWoW3 Heroes
+- Small rank images toggle (overlays rank icon on avatar, used by PBWoW3 styles)
+- Includes a base example class (`rankpoststyle1`) and predefined styles for PBWoW3 and PBWoW3 Heroes
 - Works with any style — define your own CSS classes for prosilver or custom styles
 
 ## Supported styles
 
-| Style | Included styling |
+| Style | Included CSS classes |
 |---|---|
-| **All** (base) | Minimal example class `rankpoststyle1` |
-| **PBWoW3** | Blizzard/MVP content colors, Propass avatar overlay, Blizzard avatar backgrounds |
-| **PBWoW3 Heroes** | Post background images, avatar container sprites, content colors, profile view backgrounds |
+| **All** (base) | `rankpoststyle1` — a simple example class that colors post content blue |
+| **PBWoW3** | `blizz`, `mvp`, `propass` — Blizzard/MVP content colors, Propass avatar overlay |
+| **PBWoW3 Heroes** | `blizz`, `mvp`, `propass` — post background images, avatar sprites, profile backgrounds |
 
 ## Requirements
 
@@ -41,24 +39,31 @@ Arabic, Croatian, Czech, Dutch, English, French, German, German (Sie), Italian, 
 ### Assigning rank styles
 
 1. Go to ACP > Users and Groups > Manage Ranks.
-2. Edit a special rank and enter a CSS class name in the "Rank Style" field (e.g. `blizz`).
+2. Edit a special rank and enter a CSS class name in the "Rank Style" field.
 3. Posts by users with that rank will be wrapped in a container with your class applied.
 
 ![Rank listing](contrib/screenshot.png)
 
 ![Editing a rank](contrib/ranks.png)
 
-PBWoW3 styles ship with predefined classes — just assign `blizz`, `mvp`, or `propass` to your ranks. For other styles, define your own rules:
+### Which class names can I use?
+
+The extension ships with a base example class `rankpoststyle1` that works with any style. If you use a PBWoW3 style, the classes `blizz`, `mvp`, and `propass` are also available with predefined styling.
+
+You can also define your own classes in your style's CSS:
 
 ```css
 .myrank .content { color: #00C0FF; }
 .myrank .content strong { color: #FFF; }
 ```
 
-### Small rank images (PBWoW3)
+Then enter `myrank` as the Rank Style in ACP.
 
-1. On the rank edit page, set "Small rank images" to Yes.
-2. Rank images will display as small overlays on the user avatar instead of in the standard position below it.
+### Small rank images
+
+This global setting is found in ACP > Board Configuration > Board Features under the "Rank Post Styling" section.
+
+When enabled, rank images display as small overlays on the user avatar instead of in the standard position below it. This feature is designed for PBWoW3 styles.
 
 ## Uninstallation
 
