@@ -37,7 +37,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Rank Style (CSS class)',
-	'RANK_STYLE_EXPLAIN'			=> 'Enter a CSS class name to apply to posts by users with this rank (e.g. rankpoststyle1). PBWoW3 styles also support: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Enter one or more CSS class names to apply to posts by users with this rank. Built-in: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. PBWoW3 styles also support: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Rank Post Styling',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Small rank images',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Display rank images as small overlay icons on the user avatar instead of in the standard rank position. Used by PBWoW3 styles.',

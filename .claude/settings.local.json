@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git show:*)",
+      "Bash(xargs git:*)",
+      "Bash(do echo:*)",
+      "Bash(find:*)",
+      "WebFetch(domain:www.avathar.be)",
+      "Bash(gh issue:*)",
+      "Bash(ls:*)",
+      "Bash(curl:*)",
+      "Bash(php:*)",
+      "Bash(grep RANK_STYLE'':*)"
+    ]
+  }
+}

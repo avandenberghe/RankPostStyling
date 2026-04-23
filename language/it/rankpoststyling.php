@@ -37,7 +37,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Stile livello (classe CSS)',
-	'RANK_STYLE_EXPLAIN'			=> 'Inserisci un nome di classe CSS da applicare ai messaggi degli utenti con questo livello (es. rankpoststyle1). Gli stili PBWoW3 supportano anche: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Inserisci uno o più nomi di classi CSS da applicare ai messaggi degli utenti con questo livello. Integrate: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. Gli stili PBWoW3 supportano anche: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Stile messaggi per livello',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Immagini livello piccole',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Visualizza le immagini del livello come piccole icone sovrapposte sull\'avatar dell\'utente anziché nella posizione standard del livello. Utilizzato dagli stili PBWoW3.',

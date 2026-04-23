@@ -14,7 +14,7 @@ A phpBB extension that lets you assign a CSS class to each special rank. The cla
 
 | Style | Included CSS classes |
 |---|---|
-| **All** (base) | `rankpoststyle1` — a simple example class that colors post content blue |
+| **All** (base) | `rankpoststyle1`, `rps-developer`, `rps-support`, `rps-moderator`, `rps-founder`, `rps-mvp`, `rps-styles` |
 | **PBWoW3** | `blizz`, `mvp`, `propass` — Blizzard/MVP content colors, Propass avatar overlay |
 | **PBWoW3 Heroes** | `blizz`, `mvp`, `propass` — post background images, avatar sprites, profile backgrounds |
 
@@ -25,7 +25,7 @@ A phpBB extension that lets you assign a CSS class to each special rank. The cla
 
 ## Languages
 
-Arabic, Croatian, Czech, Dutch, English, French, German, German (Sie), Italian, Polish, Portuguese, Russian, Slovak, Spanish, Spanish (tuteo), Swedish, Turkish, Ukrainian
+Croatian, Czech, Dutch, English, French, German, German (Sie), Italian, Polish, Portuguese, Russian, Slovak, Spanish, Spanish (tuteo), Swedish, Turkish, Ukrainian
 
 ## Installation
 
@@ -48,7 +48,7 @@ Arabic, Croatian, Czech, Dutch, English, French, German, German (Sie), Italian, 
 
 ### Which class names can I use?
 
-The extension ships with a base example class `rankpoststyle1` that works with any style. If you use a PBWoW3 style, the classes `blizz`, `mvp`, and `propass` are also available with predefined styling.
+The extension ships with several built-in classes that work with any style: `rankpoststyle1`, `rps-developer`, `rps-support`, `rps-moderator`, `rps-founder`, `rps-mvp`, `rps-styles`. Multiple classes can be combined by separating them with spaces. If you use a PBWoW3 style, the classes `blizz`, `mvp`, and `propass` are also available with predefined styling.
 
 You can also define your own classes in your style's CSS:
 

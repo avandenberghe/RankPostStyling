@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Стиль звання (CSS-клас)',
-	'RANK_STYLE_EXPLAIN'			=> 'Введіть назву CSS-класу для застосування до повідомлень користувачів з цим званням (наприклад, rankpoststyle1). Стилі PBWoW3 також підтримують: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Введіть одну або кілька назв CSS-класів для застосування до повідомлень користувачів з цим званням. Вбудовані: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. Стилі PBWoW3 також підтримують: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Стилізація повідомлень за званням',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Маленькі зображення звань',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Відображати зображення звань як маленькі значки поверх аватара користувача замість стандартної позиції звання. Використовується стилями PBWoW3.',

@@ -15,9 +15,6 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\cache\service */
-	protected $cache;
-
 	/** @var \phpbb\config\config */
 	protected $config;
 
@@ -34,13 +31,12 @@ class listener implements EventSubscriberInterface
 
 	public function __construct(\phpbb\cache\service $cache, \phpbb\config\config $config, \phpbb\request\request_interface $request, \phpbb\template\template $template, \phpbb\user $user)
 	{
-		$this->cache = $cache;
 		$this->config = $config;
 		$this->request = $request;
 		$this->template = $template;
 		$this->user = $user;
 
-		$this->ranks = $this->cache->obtain_ranks();
+		$this->ranks = $cache->obtain_ranks();
 	}
 
 	public static function getSubscribedEvents()
@@ -174,7 +170,7 @@ class listener implements EventSubscriberInterface
 	}
 
 	/* Get the rank style */
-	public function get_rank_style($user_rank)
+	protected function get_rank_style($user_rank)
 	{
 		$rank_style = '';
 

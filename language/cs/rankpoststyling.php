@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Styl hodnosti (CSS třída)',
-	'RANK_STYLE_EXPLAIN'			=> 'Zadejte název CSS třídy, která se použije na příspěvky uživatelů s touto hodností (např. rankpoststyle1). Styly PBWoW3 také podporují: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Zadejte jeden nebo více názvů CSS tříd, které se použijí na příspěvky uživatelů s touto hodností. Vestavěné: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. Styly PBWoW3 také podporují: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Stylování příspěvků podle hodnosti',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Malé obrázky hodností',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Zobrazí obrázky hodností jako malé překryvné ikony na avataru uživatele místo standardní pozice hodnosti. Používáno styly PBWoW3.',

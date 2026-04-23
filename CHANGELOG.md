@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.1 (2026-04-23)
+- [NEW] Added built-in rank styles: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles
+- [CHG] Removed unused `$cache` property from listener
+- [CHG] Changed `get_rank_style` visibility from public to protected
+- [CHG] Memberlist div wrapper now conditional on RANK_STYLE having a value
+- [CHG] Removed `rps_version` config key (phpBB tracks extension versions via ext_manager)
+
 ## 2.0.0 (2026-03-02)
 - [NEW] Forked to avathar/rankpoststyling namespace
 - [NEW] Added `rank_style` database column via migration

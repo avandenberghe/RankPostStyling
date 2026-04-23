@@ -36,7 +36,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Štýl hodnosti (CSS trieda)',
-	'RANK_STYLE_EXPLAIN'			=> 'Zadajte názov CSS triedy, ktorá sa použije na príspevky používateľov s touto hodnosťou (napr. rankpoststyle1). Štýly PBWoW3 tiež podporujú: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Zadajte jeden alebo viac názvov CSS tried, ktoré sa použijú na príspevky používateľov s touto hodnosťou. Vstavané: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. Štýly PBWoW3 tiež podporujú: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Štýl príspevkov podľa hodnosti',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Malé obrázky hodností',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Zobrazí obrázky hodností ako malé prekrývajúce ikony na avatare používateľa namiesto štandardnej pozície hodnosti. Používané štýlmi PBWoW3.',

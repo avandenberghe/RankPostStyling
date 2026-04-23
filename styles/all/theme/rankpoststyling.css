@@ -1,3 +1,63 @@
 .rankpoststyle1 .content {
     color: #00c0ff;
 }
+
+/* Developer - green */
+.rps-developer .post {
+    border-left: 3px solid #5ebe00;
+    background-color: rgba(94, 190, 0, 0.05);
+}
+.rps-developer .content { color: #5ebe00; }
+.rps-developer .content strong { color: #8aff00; }
+.rps-developer .post:target .content { color: #5ebe00; }
+.rps-developer .post:target .content strong { color: #8aff00; }
+
+/* Support - orange/gold */
+.rps-support .post {
+    border-left: 3px solid #e8a626;
+    background-color: rgba(232, 166, 38, 0.05);
+}
+.rps-support .content { color: #e8a626; }
+.rps-support .content strong { color: #ffc845; }
+.rps-support .post:target .content { color: #e8a626; }
+.rps-support .post:target .content strong { color: #ffc845; }
+
+/* Moderator - blue/purple */
+.rps-moderator .post {
+    border-left: 3px solid #7b8fcc;
+    background-color: rgba(123, 143, 204, 0.05);
+}
+.rps-moderator .content { color: #7b8fcc; }
+.rps-moderator .content strong { color: #a0b4ff; }
+.rps-moderator .post:target .content { color: #7b8fcc; }
+.rps-moderator .post:target .content strong { color: #a0b4ff; }
+
+/* Founder - red */
+.rps-founder .post {
+    border-left: 3px solid #cc4444;
+    background-color: rgba(204, 68, 68, 0.05);
+}
+.rps-founder .content { color: #cc4444; }
+.rps-founder .content strong { color: #ff5555; }
+.rps-founder .post:target .content { color: #cc4444; }
+.rps-founder .post:target .content strong { color: #ff5555; }
+
+/* MVP - bright red */
+.rps-mvp .post {
+    border-left: 3px solid #e03030;
+    background-color: rgba(224, 48, 48, 0.05);
+}
+.rps-mvp .content { color: #e03030; }
+.rps-mvp .content strong { color: #ff4444; }
+.rps-mvp .post:target .content { color: #e03030; }
+.rps-mvp .post:target .content strong { color: #ff4444; }
+
+/* Styles Team - pink/purple */
+.rps-styles .post {
+    border-left: 3px solid #c070d0;
+    background-color: rgba(192, 112, 208, 0.05);
+}
+.rps-styles .content { color: #c070d0; }
+.rps-styles .content strong { color: #e090f0; }
+.rps-styles .post:target .content { color: #c070d0; }
+.rps-styles .post:target .content strong { color: #e090f0; }

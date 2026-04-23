@@ -37,7 +37,7 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'RANK_STYLE'					=> 'Stil statusa (CSS klasa)',
-	'RANK_STYLE_EXPLAIN'			=> 'Unesite naziv CSS klase koja će se primijeniti na postove korisnika s ovim statusom (npr. rankpoststyle1). PBWoW3 stilovi također podržavaju: blizz, mvp, propass.',
+	'RANK_STYLE_EXPLAIN'			=> 'Unesite jedan ili više naziva CSS klasa za primjenu na postove korisnika s ovim statusom. Ugrađene: rps-developer, rps-support, rps-moderator, rps-founder, rps-mvp, rps-styles. PBWoW3 stilovi također podržavaju: blizz, mvp, propass.',
 	'RPS_LEGEND'						=> 'Stiliziranje postova prema statusu',
 	'RPS_SMALLRANKS_ENABLE'			=> 'Male slike statusa',
 	'RPS_SMALLRANKS_ENABLE_EXPLAIN'	=> 'Prikazuje slike statusa kao male ikone preko avatara korisnika umjesto na standardnoj poziciji statusa. Koristi se za PBWoW3 stilove.',
